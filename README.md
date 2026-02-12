@@ -41,10 +41,10 @@ The model successfully learned the exponential growth pattern of the chatter.
 ## 🚀 How to Run
 
 1.  **Generate Data:**
-    * Open `CNC_Chatter_Model.slx` in MATLAB/Simulink.
-    * Run the simulation to generate `cnc_chatter.csv`.
+    * Open `chatter_SDOF.slx` in MATLAB/Simulink.
+    * Run the simulation to generate `Chatter_noise.csv`.
 2.  **Train the AI:**
-    * Open `Train_ANC.ipynb` in Google Colab.
+    * Open `Chatter_noise_predictor.ipynb` in Google Colab.
     * Upload your CSV file.
     * Run all cells to train the LSTM and visualize the noise reduction.
 
