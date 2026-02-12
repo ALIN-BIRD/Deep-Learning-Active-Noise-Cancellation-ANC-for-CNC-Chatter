@@ -17,13 +17,13 @@ Unlike standard noise (which is random), Chatter is a self-excited vibration cau
 ### 1. Physics Simulation (Simulink)
 Modeled a **Single Degree of Freedom (SDOF)** Orthogonal Cutting process.
 * **Core Physics:** Mass-Spring-Damper system.
-* **The Killer Feature:** Implemented **Regenerative Feedback** using Transport Delay blocks ($y(t) - y(t-\tau)$) to mimic the tool hitting its own past cut.
+* **The Killer Feature:** Implemented **Regenerative Feedback** using Transport Delay blocks y(t) - y(t-tau) to mimic the tool hitting its own past cut.
 * **Output:** Generated "Exploding" vibration datasets where the tool transitions from stable cutting to chaotic oscillation.
 
 ### 2. The AI Model (PyTorch)
 * **Architecture:** Stacked LSTM (3 Layers, 256 Hidden Units).
 * **Input:** Raw vibration displacement (Time Series).
-* **Objective:** Predict the next vibration step ($t+1$) to generate an inverted "Anti-Noise" signal.
+* **Objective:** Predict the next vibration step (t+1) to generate an inverted "Anti-Noise" signal.
 * **Optimization:** Trained on Google Colab T4 GPU using MSE Loss and Adam Optimizer.
 
 ## 📊 Results
