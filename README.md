@@ -54,4 +54,4 @@ The model successfully learned the exponential growth pattern of the chatter.
 * Deploy the model to an **Edge Device** (Raspberry Pi/Jetson Nano) for real-time inference.
 
 ---
-*Built by [Jeevan D P] - 2nd Year Electrical Engineering Student*
+*Built by Jeevan D P - 2nd Year Electrical Engineering Student*
